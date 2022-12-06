@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Alligator Drawing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="container">    
+    
+<h1>Connect the Gator!</h1>
+<hr>
+    
+<div class="navi">
+            <a href="index.html">Home</a>
+            <a href="animals.html">Animals</a>
+            <a href="flowers.html">Flowers</a>
+            <a href="dinos.html">Dinosaurs</a>
+            <a href="freeDraw.html">Free Draw</a>
+        
+</div>    
+
+<br> 
+    
+<div id="about">   
+<h2>Draw what you want!</h2>
+<p class="pSize">To get started: Choose a color, then click and drag your mouse!</p>
+</div>     
+   
+<div id="buttons">    
+<button  id="blue" type="button">Blue</button>
+<button  id="green" type="button">Green</button>
+<button  id="red" type="button">Red</button> 
+<button  id="white" type="button">White</button>
+<button  id="grey" type="button">Grey</button> 
+<button  id="clear" type="button" value ="reload page" onClick="window.location.reload()">Clear</button> 
+</div>
+        
+
+   
+<div class="dots">
+    <div id="drawingDots">
+</div>  
+</div>
+    
+ <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>    
+<script>
+
+            let img;
+            function preload() {
+                img = loadImage('gator.jpeg');
+            }
+    
+    
+            function setup() {
+                let myCanvas = createCanvas(820, 1060);
+                myCanvas.parent("drawingDots");
+                
+                image(img,0,0, 820, 1060);
+                
+                }
+
+           function draw() {
+              //background(255);
+              
+               // BREAKS BUTTONS fill (90);
+               
+               
+               
+               noStroke();
+               if (mouseIsPressed) {
+                   ellipse(mouseX, mouseY, 8, 8);
+               }
+               
+            
+               
+              $("#blue").click(function(){
+                  fill (30, 0, 255);
+              });
+               
+            $("#green").click(function(){
+                  fill (0, 135, 5);
+              });
+                
+            $("#red").click(function(){
+                  fill (255, 0, 0);
+              }); 
+               
+             $("#white").click(function(){
+                  fill (255);
+              });  
+               
+              $("#grey").click(function(){
+                  fill (90);
+              }); 
+               
+            
+            
+           }
+    
+
+</script>
+    
+    
+   
+
+    
+</div>   
+    
+    
+    
+    
+</body>
+
+
+
+
+
+</html>    
+    
+    
+    
+    

@@ -1,0 +1,202 @@
+body {
+     background-color: #d8f1ff;
+}
+
+
+#container {
+    /*background-color: #d8ebff;*/
+    width: 95%;
+    margin: 5px auto;
+    padding: 10px 15px;
+}
+
+.navi {
+    background-color: #c2d2db;
+    text-align: center;
+    padding: 20px;
+    margin: 0px auto;
+    border: 2px solid #1d0d55;
+}
+
+
+.navi a {
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px;
+   
+}
+
+
+.navi a.active {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+#smallH2 {
+    font-size: 25px;
+}
+
+.pSize {
+    font-size: 20px;
+}
+
+#about {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+#category:after {
+   content: "";
+    display: table;
+    clear: both;
+}
+
+.imgHome {
+    padding-top: 10px;
+}
+
+#animals {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 2px ridge #1d0d55;
+    margin: 10px 10px;
+     background-color: #86d5ff;
+}
+
+#flowers {
+    float: left;
+    width: 30%;
+    text-align: center;
+     border: 2px ridge #1d0d55;
+    margin: 10px 10px;
+     background-color: #86d5ff;
+}
+
+#dinos {
+    float: left;
+    width: 30%;
+    text-align: center;
+     border: 2px ridge #1d0d55;
+    margin: 10px 10px;
+    background-color: #86d5ff;
+}
+
+.grid {
+     float: left;
+    width: 30%;
+    text-align: center;
+     border: 2px ridge #1d0d55;
+    margin: 10px 10px;
+     background-color: #86d5ff;
+}
+
+
+a:link {
+    color: #3d00e0;
+}
+
+a:hover {
+    
+    color: #7c3000;
+}
+
+a:active {
+    color: #149acb;
+}
+
+a:visited {
+    color: #89008e;
+}
+
+#freeDrawButton {
+    background-color: #86d5ff;
+    margin: 5px 0px;
+    width: 150px;
+    text-align: center;
+    border: 2px solid #1d0d55; 
+}
+
+/*drawing canvas with image*/
+#drawingDots {
+}
+
+/*free draw canvas*/
+#drawing {
+   text-align: center;
+    margin: 0px auto;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    
+    
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+    margin: 10px 10px;
+    border: 2px solid #002a00;
+    transition-duration: 0.3s;
+    border-radius: 1px;
+    padding: 10px 15px;
+    font-family: serif;
+}
+
+
+#blue:hover {
+    background-color: blue;
+    color: white;
+}
+
+#green:hover {
+    background-color: green;
+    color: white;
+}
+
+#red:hover {
+    background-color: red;
+    color: white;
+}
+
+#grey:hover {
+    background-color: grey;
+    color: white;
+}
+
+#white:hover {
+    background-color: #ffffdc;
+    
+}
+
+#clear:hover {
+    background-color: gainsboro;
+}
+
+.dots {
+
+   text-align: center;
+}
+
+
